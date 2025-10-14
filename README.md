@@ -18,7 +18,8 @@ other versions might work, but those versions were successful in running the cod
 1- untar the data directory by running:</br>
 <code>tar -xvzf data.tar</code></br>
 2- you can edit the model parameters from the file "model_params.yaml" and the parameters should be straightforward to edit.</br>
-3- you can simply run the following line to run the code:</br>
+3- "id_prop.csv" is the file needed for training. 'id_prop_cohp.csv' and 'id_prop_cobi.csv' are for the normalized -ICOHP and normalized ICOBI, respectively.</br>
+4- you can simply run the following line to run the code:</br>
 <code>python main.py</code>
 
 ## Credit
