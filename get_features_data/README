@@ -1,2 +1,3 @@
-1- you can extract the files in ""\n
-2- then run the script ""
+*how to get normalized ICOHP and normalized ICOBI features:
+1- you can extract the files in ""
+2- then run the script "features_funcs.py"
