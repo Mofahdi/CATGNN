@@ -20,7 +20,7 @@ from jarvis.io.vasp.outputs import Outcar
 def get_cohp_cobi_feats(COHPCAR_path, POSCAR_path, lobsterin_path, are_cobis=False):
 	pmg_structure=Structure.from_file(POSCAR_path)
 
-	completecohp=CompleteCohp.from_file(fmt="LOBSTER",filename=COHPCAR_path,structure_file=POSCAR_path, are_cobis=True)
+	completecohp=CompleteCohp.from_file(fmt="LOBSTER",filename=COHPCAR_path,structure_file=POSCAR_path, are_cobis=are_cobis)
 	cohp_bonds=completecohp.bonds; #print(list(cohp_bonds.keys()))	
 	labelist=list(cohp_bonds.keys())
 	cohp_data=completecohp.get_summed_cohp_by_label_list(label_list=labelist, divisor=1)
@@ -57,8 +57,8 @@ lobsterin_path=os.path.join(os.getcwd(), lobsterin_filename)
 pmg_structure=Structure.from_file('POSCAR')
 
 
-norm_cobi_1spin=get_cohp_cobi_feats(POSCAR_path=POSCAR_path, lobsterin_path=lobsterin_path, are_cobis=False, COHPCAR_path=os.path.join(os.getcwd(), COBICAR_1spin_filename))
-norm_cobi_2spin=get_cohp_cobi_feats(POSCAR_path=POSCAR_path, lobsterin_path=lobsterin_path, are_cobis=False, COHPCAR_path=os.path.join(os.getcwd(), COBICAR_2spin_filename))
+norm_cobi_1spin=get_cohp_cobi_feats(POSCAR_path=POSCAR_path, lobsterin_path=lobsterin_path, are_cobis=True, COHPCAR_path=os.path.join(os.getcwd(), COBICAR_1spin_filename))
+norm_cobi_2spin=get_cohp_cobi_feats(POSCAR_path=POSCAR_path, lobsterin_path=lobsterin_path, are_cobis=True, COHPCAR_path=os.path.join(os.getcwd(), COBICAR_2spin_filename))
 norm_cohp_1spin=get_cohp_cobi_feats(POSCAR_path=POSCAR_path, lobsterin_path=lobsterin_path, are_cobis=False, COHPCAR_path=os.path.join(os.getcwd(), COHPCAR_1spin_filename))
 norm_cohp_2spin=get_cohp_cobi_feats(POSCAR_path=POSCAR_path, lobsterin_path=lobsterin_path, are_cobis=False, COHPCAR_path=os.path.join(os.getcwd(), COHPCAR_2spin_filename))
 
