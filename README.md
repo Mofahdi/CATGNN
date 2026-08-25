@@ -1,6 +1,6 @@
 # CATGNN
 Code used for our publication:</br>
-Al-Fahdi, M.; Rurali, R.; Hu, J.; Wolverton, C.; Hu, M. Accelerated discovery of extreme lattice thermal conductivity by crystal graph attention networks and chemical bonding. npj Computational Materials 12 (1), 137.
+Al-Fahdi, M.; Rurali, R.; Hu, J.; Wolverton, C.; Hu, M. Accelerated discovery of extreme lattice thermal conductivity by crystal graph attention networks and chemical bonding. **npj Computational Materials** 12 (1), 137.
 - please cite the above work if you use the code
 
 ## Required Packages
