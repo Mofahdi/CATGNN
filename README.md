@@ -1,6 +1,6 @@
 # CATGNN
-Code used for my publication:</br>
-Al-Fahdi, M.; Rurali, R.; Hu, J.; Wolverton, C.; Hu, M. Accelerating Discovery of Extreme Lattice Thermal Conductivity by Crystal Attention Graph Neural Network (CATGNN) Using Chemical Bonding Intuitive Descriptors. arXiv preprint arXiv:2410.16066.
+Code used for our publication:</br>
+Al-Fahdi, M.; Rurali, R.; Hu, J.; Wolverton, C.; Hu, M. Accelerated discovery of extreme lattice thermal conductivity by crystal graph attention networks and chemical bonding. npj Computational Materials.
 - please cite the above work if you use the code
 
 ## Required Packages
